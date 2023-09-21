@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/actions';
 import { AddContactBtn, Container, InputEl, StyledForm } from './QuizForm.styled';
+import { addContact } from 'redux/contactSlice';
 
 export const QuizForm = () => {
   const contacts = useSelector(state => state.contacts.contacts);
